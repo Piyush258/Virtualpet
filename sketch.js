@@ -37,8 +37,10 @@ function draw() {
   fill("blue");
   stroke("black");
   strokeWeight(1);
+  if (foodS !== undefined){  
   text("Press UP_ARROW to feed your pet!",90,125);
   text("Food remaining :"+foodS,90,100);
+}
 }
 function readStock(data){
   foodS = data.val();
